@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="first">
+     <p>This is first paragraph</p>
+     <p>This is secound paragraph</p>
+    </div>
+    <div id="secound">
+        <p>This is first paragraph</p>
+        <p>This is secound paragraph</p>
+    </div>
+    <script>
+       var n= document.createElement('p');
+       n.innerText="This is third paragraph";
+       var parent=document.getElementById("first");
+       console.log(parent);
+       parent.appendChild(n);
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+    <script>
+    //creating objects in 3 ways
+    let car={ name:"maruti",relaese:"2019",weight:"850kg"};
+    //access object values
+    console.log(car);
+    console.log(car["weight"]);
+    console.log(car.name);
+    //add properties 
+     car["color"]="red";
+     car.cost="1000000";
+     console.log(car);
+     //updating properties
+     car["name"]="toyota";
+     console.log(car);
+     //create object with new 
+     let movie =new Object();
+     movie.name="chandammama";
+     movie.hero="Navadeep";
+     movie.director="vamsikrishna";
+     delete movie.hero;
+     console.log(movie);
+     //nested objects
+     let nest1={id:"101",name:"jhansi",
+         nest2 :{
+        college:"PVPSIT",branch:"IT"
+    }
+    }
+    console.log(nest1);
+    nest1.nest2.college;
+    //objects methods
+    const person = {
+    firstName: "John",
+    lastName: "Doe",
+    id: 5566,
+    fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+console.log(person.fullName());
+person.name = function () {
+  return this.firstName + " " + this.lastName;
+};
+console.log(person);
+const myarray=Object.values(person);
+console.log(myarray);
+//using constructors
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+  this.nationality = "English";
+}
+// Create 2 Person objects
+const myFather = new Person("John", "Doe", 50, "blue");
+const myMother = new Person("Sally", "Rally", 48, "green");
+// Display nationality
+document.getElementById("demo").innerHTML =
+"My father is " + myFather.nationality + ". My mother is " + myMother.nationality; 
+    </script>
+</body>
+</html>

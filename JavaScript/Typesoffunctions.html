@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //normal functions
+        function sum(a,b){
+            return a+b;
+        }
+       document.write(sum(2,3+"<br>"));
+       //annonmous function
+      var mul= function (p,q){
+         result=p*q;
+         return result;
+       }
+       document.write(mul(3,4+"<br>"));
+       //IIFE
+       var c=(function div(m,n){
+         division=m/n;
+         return division;
+       })(20,5);
+       document.write(c+"<br>");
+       //arrow fuunctions
+       var modulus=(s,r)=>{
+        result= s+r;
+        return result;
+       }
+       document.write(modulus(10,5));
+    
+    </script>
+</body>
+</html>

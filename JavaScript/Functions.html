@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function call 
+        function msg(){
+            alert("Hello world");
+        }
+        msg();
+        //function parameters
+        function cube(num){
+             alert(num*num*num);
+        }
+        //functions with return time
+        function hello(){
+            return "I'm First "+"<br/>";
+        }
+        document.writeln(hello());
+        //function objects
+        var pow=new Function("num1","num2","return Math.pow(num1,num2)");  
+        document.writeln(pow(2,3));  
+    </script>
+    <form>
+        <input type="button" value="click" onclick="cube(3)"/>
+        </form>
+</body>
+</html>
